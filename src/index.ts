@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.send('Hello, World! 1');
+    res.send('Hello, World! 2');
 });
 
 try {

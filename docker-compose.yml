@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  express-typescript-docker:
+  node-docker-express:
     environment:
       - NODE_ENV=development
     build:
@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ./:/usr/src/app
-    container_name: express-typescript-docker
+    container_name: node-docker-express
     expose:
       - '3000'
     ports:
